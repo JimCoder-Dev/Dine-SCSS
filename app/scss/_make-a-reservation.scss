@@ -1,0 +1,30 @@
+.make-a-reservation {
+  height: 20.5rem;
+  background-image: url('/app/images/homepage/ready-bg-mobile@2x.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: $white;
+  background-repeat: no-repeat;
+
+  @include breakpoint-up(medium) {
+    height: 17rem;
+    background-image: url('/app/images/homepage/ready-bg-tablet@2x.jpg');
+  }
+
+  @include breakpoint-up(xlarge) {
+    height: 15rem;
+    background-image: url(/app/images/booking/hero-bg-desktop@2x.jpg);
+    background-position: top center;
+    background-size: cover;
+  }
+  .container {
+    padding: 0;
+  }
+
+  .reservation-title {
+    @include breakpoint-up(xlarge) {
+      margin-bottom: 0;
+      margin-right: 10rem;
+    }
+  }
+}

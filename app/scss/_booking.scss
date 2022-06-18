@@ -1,0 +1,98 @@
+.booking {
+  height: 37.5rem;
+  background-image: url('/app/images/booking/hero-bg-mobile@2x.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $white;
+
+  .four-cols {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    align-self: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .four-cols div {
+    width: 100%;
+  }
+
+  @include breakpoint-up(medium) {
+    background-image: url('/app/images/booking/hero-bg-tablet@2x.jpg');
+  }
+
+  @include breakpoint-up(xlarge) {
+    background-image: url('/app/images/booking/hero-bg-desktop@2x.jpg');
+  }
+
+  .reservation-section {
+    width: 100%;
+    margin-bottom: -21.5rem;
+  }
+
+  .reservation-form {
+    padding: 2rem;
+    height: 35rem;
+    width: 33.75rem;
+    background-color: $white;
+    z-index: 100;
+    color: inherit;
+    font-size: 1.2rem;
+  }
+
+  input {
+    font-size: 1.2rem;
+  }
+
+  label {
+    display: flex;
+    align-self: center;
+  }
+
+  .select {
+    width: 100%;
+    display: flex;
+
+    padding: 1rem 0;
+
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+  }
+
+  .hero-header {
+    @include breakpoint-up(xlarge) {
+      text-align: left;
+    }
+  }
+
+  .arrow {
+    width: 2rem;
+  }
+
+  .text-input {
+    margin-bottom: 1rem;
+  }
+
+  .flex-3-col {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $codGray;
+  }
+
+  .people-selected {
+    color: black;
+  }
+
+  .reservation-btn {
+    border: 1px solid $codGray;
+    width: 100%;
+    margin-top: 3rem;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+}

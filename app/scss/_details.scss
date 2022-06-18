@@ -1,0 +1,102 @@
+.details {
+  position: relative;
+
+  .enjoyable-place {
+    margin-top: -4rem;
+  }
+
+  .locally-sourced {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  &__ls-image {
+    position: relative;
+    @include breakpoint-up(medium) {
+      order: 100;
+    }
+  }
+
+  &__text {
+    padding: 0 4rem;
+    @include breakpoint-up(xlarge) {
+      text-align: left;
+    }
+  }
+
+  &__ep-image {
+    position: relative;
+  }
+
+  #enjoyable-place {
+    @include breakpoint-up(medium) {
+      content: url('/app/images/homepage/enjoyable-place-tablet@2x.jpg');
+    }
+
+    @include breakpoint-up(xlarge) {
+      content: url('/app/images/homepage/enjoyable-place-desktop@2x.jpg');
+    }
+  }
+  #locally-sourced {
+    @include breakpoint-up(medium) {
+      content: url('/app/images/homepage/locally-sourced-tablet@2x.jpg');
+    }
+
+    @include breakpoint-up(xlarge) {
+      content: url('/app/images/homepage/locally-sourced-desktop@2x.jpg');
+      margin-bottom: -8rem;
+    }
+  }
+
+  #rect-1,
+  #rect-2,
+  #lines-1 {
+    display: none;
+  }
+
+  #rect-1,
+  #rect-2 {
+    z-index: -10;
+  }
+
+  #rect-1 {
+    @include breakpoint-up(medium) {
+      display: block;
+      position: absolute;
+      bottom: -20%;
+      left: -70%;
+    }
+
+    @include breakpoint-up(xlarge) {
+      height: 40%;
+      width: 100%;
+      position: absolute;
+      bottom: 18%;
+      left: 30%;
+    }
+  }
+
+  #rect-2 {
+    @include breakpoint-up(xlarge) {
+      display: block;
+      position: absolute;
+      bottom: -10%;
+      left: -20%;
+      height: 40%;
+    }
+  }
+
+  #lines-1 {
+    @include breakpoint-up(medium) {
+      display: block;
+      position: absolute;
+      bottom: 20%;
+      right: -8%;
+    }
+
+    @include breakpoint-up(xlarge) {
+      bottom: 40%;
+      right: -20%;
+    }
+  }
+}

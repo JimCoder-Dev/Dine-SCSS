@@ -1,0 +1,217 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  line-height: 1.15;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  @include breakpoint-up(medium) {
+    font-size: 3rem;
+  }
+
+  @include breakpoint-up(xlarge) {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-bottom: 1.5625rem;
+  font-weight: 500;
+
+  @include breakpoint-up(medium) {
+    font-size: 2.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+
+  font-size: 0.9375rem;
+  @include breakpoint-up(medium) {
+    font-size: 1.125rem;
+  }
+}
+
+label {
+  color: $codGray;
+  text-align: left;
+}
+
+input {
+  border: 0;
+  border-bottom: 1px solid $codGray;
+  padding: 1rem 0;
+}
+
+input {
+  width: 100%;
+}
+
+select {
+  // A reset of styles, including removing the default dropdown arrow
+  appearance: none;
+  // Additional resets for further consistency
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  position: relative;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: rgba(76, 76, 76, 0.5);
+  cursor: pointer;
+}
+
+.active {
+  color: rgba(76, 76, 76, 1);
+}
+
+.active::after {
+  content: '';
+  height: 1px;
+  width: 15%;
+  background-color: $codGray;
+  position: absolute;
+  bottom: -0.25em;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include breakpoint-up(xlarge) {
+    left: -14%;
+    z-index: -1;
+    width: 25%;
+    bottom: 0.75rem;
+  }
+}
+
+a,
+a:visited,
+a:hover {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a {
+  &:hover {
+    background-color: $white;
+    color: $codGray;
+  }
+}
+
+.container {
+  max-width: 74rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  @include breakpoint-up(medium) {
+    padding: 0 6.125rem;
+  }
+
+  @include breakpoint-up(xlarge) {
+    padding: 0;
+  }
+}
+
+.two-col {
+  @include breakpoint-up(xlarge) {
+    display: flex;
+    align-items: center;
+  }
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  font-size: 1.1rem;
+  padding: 1.24rem 3.8rem;
+  border: 1px solid $white;
+}
+
+.btn.btn-dark {
+  background-color: $codGray;
+  color: $white;
+  border: 1px solid $codGray;
+}
+
+.btn.btn-dark:hover {
+  background-color: transparent;
+  color: $codGray;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  @include breakpoint-up(xlarge) {
+    align-items: flex-start;
+  }
+}
+
+.divide-line {
+  margin-bottom: 1rem;
+  @include breakpoint-up(medium) {
+    margin-top: 1rem;
+  }
+}
+
+.center {
+  text-align: center;
+}

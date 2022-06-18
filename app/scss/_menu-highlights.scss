@@ -1,0 +1,55 @@
+.menu-highlights {
+  background-color: $codGray;
+  color: $white;
+  padding: 2rem 0;
+
+  @include breakpoint-up(xlarge) {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
+
+  &__heading {
+    @include breakpoint-up(xlarge) {
+      text-align: left;
+      padding-right: 4rem;
+    }
+  }
+  &__glimpse {
+    @include breakpoint-up(xlarge) {
+      width: 100%;
+    }
+  }
+  .two-col {
+    @include breakpoint-up(xlarge) {
+      align-items: flex-start;
+    }
+  }
+}
+h3 {
+  @include breakpoint-up(medium) {
+    margin-top: 0;
+  }
+}
+
+.food-highlight {
+  margin-bottom: 1.5rem;
+
+  @include breakpoint-up(medium) {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 2rem;
+  }
+}
+
+.food-highlight-text {
+  text-align: start;
+  margin-bottom: 1rem;
+}
+
+.food-highlight-text p {
+  margin-bottom: 0;
+}
+
+.food-highlight:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}

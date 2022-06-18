@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dine|Website Booking</title>
+  </head>
+  <body>
+    <section class="booking">
+      <div class="container flex">
+        <div class="two-col">
+          <div class="hero-header">
+            <div class="hero__logo">
+              <img src="/app/images/logo.svg" alt="" />
+            </div>
+
+            <h1>Reservations</h1>
+            <p>
+              We can't wait to host you. If you have any special requirements
+              please feel free to call on the phone number below. We'll be happy
+              to accommodate you.
+            </p>
+          </div>
+
+          <aside class="reservation-section">
+            <form class="reservation-form">
+              <div>
+                <input class="text-input" type="text" placeholder="Name" />
+                <input class="text-input" type="email" placeholder="Email" />
+                <div class="four-cols">
+                  <label for="data">Pick a date</label>
+
+                  <input class="center" type="text" placeholder="MM" />
+                  <input class="center" type="text" placeholder="DD" />
+                  <input class="center" type="text" placeholder="YYYY" />
+                </div>
+                <div class="four-cols">
+                  <label for="">Pick a time</label>
+
+                  <input class="center" type="text" placeholder="09" />
+
+                  <input class="center" type="text" placeholder="00" />
+
+                  <div class="select">
+                    <select class="center" name="">
+                      <option value="am">AM</option>
+                      <option value="pm">PM</option>
+                    </select>
+                    <img
+                      class="arrow"
+                      src="/app/images/icons/icon-arrow.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="flex-3-col">
+                  <button type="button" id="minus-btn">
+                    <img src="/app/images/icons/icon-minus.svg" alt="" />
+                  </button>
+                  <div class="people-selected">
+                    <span id="number-of-people"></span>
+                    people
+                  </div>
+                  <button type="button" id="plus-btn">
+                    <img src="/app/images/icons/icon-plus.svg" alt="" />
+                  </button>
+                </div>
+                <button class="reservation-btn">MAKE A RESERVATION</button>
+              </div>
+            </form>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="white-space">
+      <img
+        class="curve-bottom-right"
+        src="/app/images/patterns/pattern-curve-bottom-right.svg"
+        alt=""
+      />
+      <img
+        class="line-pattern"
+        src="/app/images/patterns/pattern-lines.svg"
+        alt=""
+      />
+    </section>
+    <footer class="footer">
+      <div class="container flex footer__content">
+        <img class="footer-logo" src="/app/images/logo.svg" alt="" />
+        <div class="footer__col">
+          <div class="footer__text">
+            <p>MARTHWAITE, SEDBERGH</p>
+            <p>CUMBRIA</p>
+            <p>+00 44 123 4567</p>
+          </div>
+          <div class="footer__text">
+            <p>OPEN TIMES</p>
+            <p>MON - FRI: 9:00 AM - 10:00 PM</p>
+            <p>SAT - SUN: 9:00 AM - 11:30 PM</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/app/js/script-form.js"></script>
+  </body>
+</html>

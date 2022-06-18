@@ -1,0 +1,99 @@
+.gather-event {
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  position: relative;
+
+  .event-text {
+    #change-title {
+      margin-top: 2rem;
+    }
+
+    @include breakpoint-up(xlarge) {
+      text-align: start;
+      padding: 0 8rem;
+      display: flex;
+      flex-direction: column;
+      #change-title {
+        margin-top: 0rem;
+      }
+      .btn {
+        text-align: center;
+        width: 50%;
+      }
+    }
+  }
+
+  #change-description {
+    @include breakpoint-up(medium) {
+      padding: 0 6rem;
+    }
+
+    @include breakpoint-up(xlarge) {
+      padding-left: 0;
+      padding-right: 3rem;
+    }
+  }
+
+  #event-rect {
+    display: none;
+    @include breakpoint-up(medium) {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -45%;
+    }
+  }
+
+  #event-lines {
+    display: none;
+    @include breakpoint-up(medium) {
+      display: block;
+      position: absolute;
+      top: 2.5%;
+      left: 5%;
+    }
+  }
+
+  .btn-list {
+    @include breakpoint-up(medium) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @include breakpoint-up(xlarge) {
+      order: 4;
+      flex-direction: column;
+    }
+  }
+
+  // .event-images {
+  //   .family-image {
+  //     content: url('/app/images/homepage/family-gathering-mobile@2x.jpg');
+  //     @include breakpoint-up(medium) {
+  //       content: url('/app/images/homepage/family-gathering-tablet@2x.jpg');
+  //     }
+  //     @include breakpoint-up(xlarge) {
+  //       content: url('/app/images/homepage/family-gathering-desktop@2x.jpg');
+  //     }
+  //   }
+
+  //   .special-image {
+  //     content: url('/app/images/homepage/special-events-mobile@2x.jpg');
+  //     @include breakpoint-up(medium) {
+  //       content: url('/app/images/homepage/special-events-tablet@2x.jpg');
+  //     }
+  //     @include breakpoint-up(xlarge) {
+  //       content: url('/app/images/homepage/special-events-desktop@2x.jpg');
+  //     }
+  //   }
+
+  //   .social-image {
+  //     content: url('/app/images/homepage/social-events-mobile@2x.jpg');
+  //     @include breakpoint-up(medium) {
+  //       content: url('/app/images/homepage/social-events-mobile@2x.jpg');
+  //     }
+  //     @include breakpoint-up(xlarge) {
+  //       content: url('/app/images/homepage/social-events-desktop@2x.jpg');
+  //     }
+  //   }
+  //}
+}

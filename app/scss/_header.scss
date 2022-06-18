@@ -1,0 +1,55 @@
+.hero {
+  position: relative;
+  height: 46.75rem;
+
+  background: url('/app/images/homepage/hero-bg-mobile@2x.jpg');
+  background-size: cover;
+  background-color: $codGray;
+  background-repeat: no-repeat;
+
+  @include breakpoint-up(medium) {
+    height: 62rem;
+    background: url('/app/images/homepage/hero-bg-tablet@2x.jpg');
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: $codGray;
+  }
+
+  @include breakpoint-up(xlarge) {
+    height: 51.25rem;
+    background: url('/app/images/homepage/hero-bg-desktop@2x.jpg');
+    background-position: center center;
+    background-size: cover;
+  }
+  h1 {
+    padding: 0 3rem;
+    line-height: 1.5;
+    @include breakpoint-up(xlarge) {
+      padding: 0;
+    }
+  }
+
+  &__text {
+    color: $white;
+
+    margin-top: 3rem;
+
+    @include breakpoint-up(medium) {
+      width: 43rem;
+    }
+
+    @include breakpoint-up(xlarge) {
+      text-align: start;
+      width: 32.75rem;
+    }
+  }
+
+  &__logo {
+    margin: 2rem 0;
+    @include breakpoint-up(xlarge) {
+      position: absolute;
+      top: 0;
+    }
+  }
+}

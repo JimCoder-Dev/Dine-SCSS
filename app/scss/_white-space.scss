@@ -1,0 +1,23 @@
+.white-space {
+  height: 30rem;
+  position: relative;
+
+  .curve-bottom-right {
+    z-index: -1000;
+  }
+
+  .curve-bottom-right,
+  .line-pattern {
+    position: absolute;
+  }
+
+  .curve-bottom-right {
+    bottom: 0;
+    left: 0;
+  }
+
+  .line-pattern {
+    bottom: 38%;
+    left: 35%;
+  }
+}
